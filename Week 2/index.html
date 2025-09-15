@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 2</title>
+    <script src="Week2.js" defer></script>
+</head>
+<body>
+    <h1>Week 2 Kotitehtävät</h1>
+
+    <table border="1">
+        
+        <tr> 
+            <th>Username</th>
+            <th>Email</th>
+            <th>Admin</th>
+            <th>Profile</th>
+        </tr>
+        <tr> <td>MrDG03</td><td>dekan@hotmail.fi</td><td>X</td><td><img src="minecraft.png" width="64" height="64"></td>
+        </tr>
+        <tr> <td>ezlmfao</td><td>duin@hotmail.fi</td><td>X</td><td><img src="zubair.png" width=64 height=64></td>
+        </tr>
+        <tr> <td>lmfaoez</td><td>dekan.ghazi@gmail.com</td><td>-</td><td><img src="kailash.png" width=64 height=64></td>
+        </tr>
+    
+    </table>
+    <fieldset>
+        <legend><h2>Information</h2></legend>
+        <label for="username">Username:</label>
+        <input type="text" name="username" id="input-username" placeholder="Write your username...">
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="input-email" placeholder="Write your email...">
+        <label for = "admin">Are you an Admin?</label>
+        <input type="checkbox" id="input-admin" name="admin" value = 1>
+        <label for = "input-admin"> Yes I am.</label>
+        <input type="file" id="input-image" name="input">
+        <br>
+        <br>
+        <button id="submit-data">Upload profile</button>
+        <button id="empty-table">System reset</button>
+    </fieldset>
+    
+</body>
+</html>
