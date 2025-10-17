@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deka°</title>
+    <script src="javascript/source.js" defer> </script>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Zen+Dots&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="header">
+        <img src="/images/deka.png">
+        <div class="innerheader">
+            <ul class="navigation"> 
+                    <a href="deca.html"><li>Home</li></a>
+                    <a href="documentation.html"><li>Documentation</li></a>
+                    <li><button id="switchMode">Switch Mode</button></li>
+            </ul>
+        </div>
+    </div>
+    <img src="images/logo.png" class="logo">
+    <div class="window">
+        <div class="search">
+            <input type="text" id="searchBar"class="search-bar" placeholder="Search city...">
+            <button id="searchButton"><img src="/images/icons/search.png"></button>
+            <button class="gps" id="gpsbutton">GPS</button>
+        </div>
+        <div class="unit">
+            <label><input type="radio" name="unit" value="metric" checked> °C</label>
+            <label><input type="radio" name="unit" value="imperial"> °F</label>
+            <label><input type="radio" name="unit" value="default"> °K</label>
+        </div>
+        <div class="weather">
+            <img src="/images/cloud.png" class="weather-icon" id="weatherIcon">
+            <h1 class="temp" id="temperature">--°C</h1>
+            <h2 id="nameCity" class="city">City, Country</h2>
+            <div class="details">
+                <p>Wind <img src="/images/icons/wind.png">:<span id="wind"></span></p>
+                <p>Feels like: <span id="feelsLike">--°C</span></p>
+                <p>Humidity <img src="images/icons/humidity.png">: <span id="humidity"></span></p>
+                <p> <span id="misc1"></span></p>
+                <p> <span id="misc2"></span></p>
+            </div>
+        </div>
+        <div class="forecast-mode">
+            <button id="hourlyBtn" class="active">24-hour</button>
+            <button id="dailyBtn">7-day</button>
+            <button id="newBtn">16-day</button>
+        </div>
+        <div class="forecast" id="forecastContainer">
+
+        </div>
+        <div class="favourites-area">
+            <label for="favourites">Favourites:</label>
+                <select id="favourites">
+                    <option value="" disabled selected>Select city</option>
+
+                </select>
+            <button id="addFavourite">＋ Add City To Favourites</button>
+
+        </div>
+        <div>
+            <button id="hotBtn">Hottest city on Earth</button>
+            <button id="coldBtn">Coldest city on Earth</button>
+        </div>
+        <p id="error"></p>
+    
+        
+            
+
+            </div>
+         
+        </div>
+    
+    </div>
+    
+</div>
+    
+
+
+</body>
+</html>

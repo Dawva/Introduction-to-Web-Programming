@@ -1,0 +1,271 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+.header{
+    width: 100%;
+    height: 80px; 
+    display: flex;
+    justify-content: space-between;
+    background-color: #232426;
+}
+.header img {
+    justify-content: left;
+}
+.weather-icon {
+    margin: 10px auto 10px auto;
+    width: 200px;
+}
+
+
+.innerheader{
+    width: 25%;
+    display: flex;
+    align-items: center;
+    background-color: #232426;
+    justify-content: center;
+}
+
+.navigation{
+    display: flex;
+
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    gap: 40px;
+}
+.navigation li {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+
+#switchMode:hover {
+    transform: scale(1.1)
+}
+
+#switchMode {
+    all: unset;
+    font-family: "Zen Dots", sans-serif;
+    font-size: 16px;
+    color: #a98e65;
+    cursor: pointer;
+    padding: 8px 12px;
+    transition: 0.2s ease;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+  }
+.navigation a li,
+.navigation li button {
+    vertical-align: middle;
+    padding-left: 10px;
+    height: 100%;
+    color: #a98e65;
+    font-family:"Zen Dots", sans-serif;
+    font-size: 16px;
+}
+.navigation a li :last-child {
+    padding-right: 10px;
+}
+
+.logo {
+    display: block;
+    margin: 20px auto;
+    width: 500px;
+    height: auto;
+}
+.search {
+    display: flex;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.search input {
+    border: 4px;
+    outline: #0a0b0e;
+    background:#00000081;
+    color:#ededede1;
+    padding: 4px;
+    border-radius: 30px;
+    width: 40%;
+    height: 30px;
+    flex: 1;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+button {
+    background-color: rgba(27, 23, 23, 0);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 6px;
+    cursor: pointer;
+}
+.search button {
+    border: 0px;
+    outline: 0;
+    color: #fbf0dd;
+    background-color: rgba(35, 30, 30, 0.762);
+    border-radius: 50%;
+    width: 60px;
+    height: 50px;
+    cursor: pointer;
+    transition: 0.8s;
+    box-shadow: 10px;
+}
+
+.search button:hover {
+    background:rgb(74, 66, 66, 0.8)
+}
+.search button img {
+    width: 20px;
+    
+}
+.gps {
+    color: white;
+}
+.window{
+    width: 90%;
+    max-width: 500px;
+    background: linear-gradient(90deg, rgba(109, 0, 149, 0.433), rgb(74, 66, 66, 0.2));
+    color: #fbf0dd;
+    margin: 4px auto 150px auto;
+    border-radius: 25px;
+    padding: 50px 5px;
+    text-align: center;
+    font-family:'Courier New', Courier, monospace;
+    box-shadow: 0 0 10px;
+
+}
+body {
+
+    background-image: url("../images/background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+.details img {
+    width: 15px;
+    height: 15px;
+}
+#forecastContainer {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    overflow-x: auto;
+    padding: 10px
+}
+.day-card {
+    background-color: rgb(0, 0, 0, 0.3);
+    border-radius: 12px;
+    text-align: center;
+    width: 100px;
+    transition: 0.2s;
+    font-size: 1.2rem
+}
+.day-card:hover {
+    transform: scale(1.20); 
+    background:rgb(74, 66, 66, 0.8); 
+}
+.maxtemp{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.mintemp {
+    opacity: 0.8;
+    margin-bottom: 10px;
+}
+
+.emoji {
+    font-size: 3.5rem;
+    margin-bottom: 3px
+}
+.day {
+    font-size: 0.8rem;
+    opacity: 0.8;
+}
+#addFavourite {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 6px;
+    cursor: pointer;
+  } 
+button {
+    background-color: rgba(27, 23, 23, 0.372);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 6px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .header {
+      flex-direction: column;
+      height: auto;
+      align-items: center;
+      padding: 10px 0;
+    }
+  
+    .innerheader {
+      width: 100%;
+      justify-content: center;
+    }
+  
+    .navigation {
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-top: 5px;
+    }
+  
+    .navigation li a,
+    #switchMode {
+      font-size: 14px;
+      padding: 6px 8px;
+    }
+  
+    .logo {
+      width: 0%;
+      margin-top: 10px;
+    }
+  
+    .window {
+      width: 95%;
+      padding: 20px 10px;
+    }
+  
+    .search input {
+      width: 70%;
+      font-size: 16px;
+    }
+  
+    .search button {
+      width: 45px;
+      height: 45px;
+    }
+  
+    .day-card {
+      width: 80px;
+      font-size: 1rem;
+    }
+  
+    .emoji {
+      font-size: 2.5rem;
+    }
+  
+    #addFavourite {
+      font-size: 0.9rem;
+    }
+  }
